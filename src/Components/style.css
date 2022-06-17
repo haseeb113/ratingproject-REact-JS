@@ -1,0 +1,27 @@
+.navbar
+{
+ color: cadetblue;
+ display:flex;
+ background-color: azure;
+}
+nav
+{
+    padding-left: 650px;
+    padding-top: 18px;
+}
+nav ul li 
+{
+    display: inline-flex;
+    padding-inline: inherit;
+}
+.Homebody
+{
+    display:inline-block;
+    padding-left: 60px;
+}
+.slider
+{
+    background-color: darkcyan;
+    display: flex;
+    padding-left: 600px;
+}
