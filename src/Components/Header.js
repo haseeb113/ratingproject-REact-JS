@@ -11,11 +11,17 @@ const Header = () => {
     if (isloggedIn === undefined || isloggedIn === '') {
         return (
             <div className='navbar'>
-                <h1>Rating App</h1>
+                <Link to="/"><h1>Rating App</h1></Link>
                 <nav>
                     <ul>
                         <li>
                             <Link to="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link to="/about">About Us</Link>
+                        </li>
+                        <li>
+                            <Link to="/contact">Contact</Link>
                         </li>
                         <li>
                             <Link to="/login">Login</Link>
@@ -23,7 +29,7 @@ const Header = () => {
                         <li>
                             <Link to="/signup">Register</Link>
                         </li>
-
+                        
                     </ul>
                 </nav>
             </div>
@@ -32,17 +38,18 @@ const Header = () => {
     else {
         return (
             <div className='navbar'>
-                <h1>Rating App</h1>
+                <Link to="/dashboard"><h1>Rating App</h1></Link>
                 <nav>
                     <ul>
+                        
                         <li>
-                            <Link to="/">Home</Link>
+                            <Link to="/dashboard">Dashboard</Link>
                         </li>
                         <li>
                             <Link to="/ProductGallery">Gallery</Link>
                         </li>
                         <li>
-                            <Link to="/dashboard">Dashboard</Link>
+                            <Link to="/contact">Contact</Link>
                         </li>
                         <li>
                             <Link to="/login" onClick={logout}>Logout</Link>

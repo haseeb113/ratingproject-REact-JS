@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom";
 import { Forsignup } from "../Models/LoginFetch";
+import '../Components/style.css';
 
 const Register = () => {
     const Navigate = useNavigate();
@@ -18,6 +19,12 @@ const Register = () => {
     }
     return (
         <div>
+        <div className="slider">
+            <h3>Registeration Section</h3>
+        </div>
+            
+        <div className="tabdiv">
+            
             <form onSubmit={handlesignup}>
                 <label>FullName: <input type="text" value={Fname} onChange={(e) => { setfullname(e.target.value) }} placeholder="Enter Your Full Name" required/></label><br />
                 <label>Email: <input type="email" value={email} onChange={(e) => { setemail(e.target.value) }} placeholder="Enter Your Email Id" required /></label><br />
@@ -29,9 +36,10 @@ const Register = () => {
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                 </select><br />
-                <input type="submit" value="Register Account" />
+                <input type="submit" value="Register Account" /> &nbsp;&nbsp;
                 <Link to="/">Cancel</Link>
             </form>
+        </div>
         </div>
     )
 }

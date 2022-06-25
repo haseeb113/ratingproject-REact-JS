@@ -18,10 +18,68 @@ nav ul li
 {
     display:inline-block;
     padding-left: 60px;
+    padding-top: 15px;
 }
+
 .slider
 {
     background-color: darkcyan;
     display: flex;
     padding-left: 600px;
+    color:floralwhite;
+}
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+  th, td {
+    background-color: #85e0ba;
+  }
+  .tabdiv
+  {
+    padding-left: 350px;
+    padding-right: 200px;
+  }
+  
+  input[type=text],input[type=email],input[type=password],select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 2px solid rgb(66, 224, 190);
+  }
+  
+  
+  input[type=submit]{
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  .linkcss
+  {
+    background-color: darkcyan;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+ 
+  .checked {
+    color: orange;
+  }
+  .green-color {
+    color:green;
+}
+.maplist
+{
+  display: flex;
 }

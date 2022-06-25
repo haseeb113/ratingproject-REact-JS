@@ -1,6 +1,8 @@
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Aboutus from './Components/Aboutus';
+import Contactus from './Components/Contactus';
 import Dashboard from './Components/Dashboard';
 import Gallery from './Components/Gallery';
 import Home from './Components/Home';
@@ -22,6 +24,8 @@ const App = () => {
             <Route path="/ProductGallery" element={<Gallery/>}/>
             <Route path="/Review" element={<ReviewSection/>}/>
             <Route path="dashboard" element={<Dashboard/>}/>
+            <Route path="about" element={<Aboutus/>}/>
+            <Route path="contact" element={<Contactus/>}/>
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
